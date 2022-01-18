@@ -22,6 +22,7 @@ class SignInScreen : AppCompatActivity() {
         if(Patterns.EMAIL_ADDRESS.matcher(email.text).matches() && email.text.isNotEmpty()){
             val intent = Intent(this@SignInScreen,MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
         else{
             val alert = AlertDialog.Builder(this)
