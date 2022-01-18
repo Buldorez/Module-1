@@ -47,7 +47,8 @@
                 android:layout_marginTop="72dp"
                 android:fontFamily="@font/roboto"
                 android:paddingLeft="20dp"
-                android:text="E-mail"
+                android:hint="E-mail"
+                android:textColorHint="@color/gray"
                 android:textColor="@color/gray"
                 android:layout_gravity="center"
                 android:background="@drawable/ed_shape"
@@ -62,7 +63,8 @@
                 android:layout_marginTop="18dp"
                 android:background="@drawable/ed_shape"
                 android:paddingLeft="20dp"
-                android:text="Пароль"
+                android:hint="Пароль"
+                android:textColorHint="@color/gray"
 
                 android:textColor="@color/gray" />
 
