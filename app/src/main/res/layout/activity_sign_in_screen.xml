@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInScreen"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="72dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/Logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="WorldCinema"
+                android:textColor="@color/orange"
+                android:textSize="36dp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="330dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="72dp"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="20dp"
+                android:text="E-mail"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:background="@drawable/ed_shape"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="330dp"
+                android:layout_height="46dp"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ed_shape"
+                android:paddingLeft="20dp"
+                android:text="Пароль"
+
+                android:textColor="@color/gray" />
+
+
+            <Button
+                android:id="@+id/Reg"
+                android:layout_width="330dp"
+                android:layout_height="46dp"
+                android:text="Войти"
+                android:layout_marginTop="106dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bt_shape"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:textAllCaps="false"
+                android:onClick="reg"/>
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="330dp"
+                android:layout_height="46dp"
+                android:text="Регистрация"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bt_shapetwo"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/orange"
+                android:textAllCaps="false"
+                android:onClick="sign"/>
+
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
